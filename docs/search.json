@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to my homepage!",
+    "title": "Welcome to my example website!",
     "section": "",
-    "text": "This is my example website’s homepage. This website is rendered from markdown (.md) files using Quarto and hosted online using Github Pages. This setup predominately relies on plain language YAML (.yml) configuration files rather than web development knowledge.\nWrite markdown files in any plain text editor then render the whole website from the terminal with quarto render. I use and recommend Obsidian, a robust and extensible plain text editor.\nThe Github repository can be accessed here."
+    "text": "Welcome to my example website!\nThis is my example website’s homepage. This website is rendered from markdown (.md) files using Quarto and hosted online using Github Pages. This setup predominately relies on plain language YAML (.yml) configuration files rather than web development knowledge.\nWrite markdown files in any plain text editor then render the whole website from the terminal with quarto render. I use and recommend Obsidian, a robust and extensible plain text editor.\nThe Github repository can be accessed here."
   },
   {
     "objectID": "pages/about.html",
