@@ -1,1 +1,3 @@
 This is my example website's repository. This website is rendered from markdown files using Quarto and hosted online using Github Pages. You and your team can write your markdown files in any plain text editor. I use and recommend Obsidian, a robust and extensible plain text editor. This setup predominately relies on plain language YAML configuration files (\_quarto.yml and \_brand.yml) rather than web development knowledge.
+
+The website can be accessed [here](https://niboxr.github.io/Example-Quarto-Website/).
