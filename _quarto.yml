@@ -1,17 +1,15 @@
 project:
   type: website
   output-dir: docs #renders project to docs folder for publishing to Github Pages
-  # render: 
-  #   - content/index.md
-
 website:
+  site-url: "https://niboxr.github.io/Example-Quarto-Website/" #needed for open-graph
   title: "Example Quarto Website"
-  description: "Example quarto website with generic branding"
+  description: "An example Quarto website with generic branding"
   image: "assets/images/logo.png"
   favicon: assets/images/icon.svg
   open-graph:
     title: "Example Quarto Website" #Repeated for open graph seperately due to Quarto bug
-    description: "Example quarto website with generic branding"
+    description: "An example Quarto website with generic branding"
     image: "assets/images/logo.png"
     image-width: 1200
     image-height: 630
