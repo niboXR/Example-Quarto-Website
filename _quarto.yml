@@ -14,14 +14,14 @@ project:
 
 website:
   site-url: "https://niboxr.github.io/Example-Quarto-Website/" #needed for open-graph - replace with your site url
-  title: "Example Quarto Website" #update with your site title
+  title: "Drip Haus" #update with your site title
   description: "An example Quarto website with generic branding" #update with your site description
   image: "assets/images/logo.png" #update with your site's png logo
   favicon: assets/images/icon.svg #update with your site's svg logo
   
   # Open-graph setup for rich visual link previews
   open-graph: #open-graph creates 
-    title: "Example Quarto Website" #Repeat site title for open graph due to Quarto bug
+    title: "Drip Haus" #Repeat site title for open graph due to Quarto bug
     description: "An example Quarto website with generic branding" #repeat site description for open-graph
     image: "assets/images/logo.png" #repeat site image for open-graph
     image-width: 1200 #standard dimensions for open-graph image
