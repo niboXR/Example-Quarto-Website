@@ -1,3 +1,9 @@
+# _brand.yml allows you to apply your branding to every document produced within a quarto project
+
+#################
+# Custom Colors #
+#################
+
 color:
   palette:
     purple: "#8A5CF5"
@@ -6,6 +12,10 @@ color:
   primary: purple
   background: white 
   foreground: black
-  
+
+################
+# Brand Assets #
+################
+
 logo: 
   medium: assets/images/logo.svg #dont need small and large sizes for svg

@@ -1,21 +1,36 @@
+# _qaurto.yml is the foundation of any Quarto project. Think of it as project preferences.
+
+#################
+# Project Setup #
+#################
+
 project:
   type: website
   output-dir: docs #renders project to docs folder for publishing to Github Pages
+  
+#################################
+# Website details and structure #
+#################################
+
 website:
-  site-url: "https://niboxr.github.io/Example-Quarto-Website/" #needed for open-graph
-  title: "Example Quarto Website"
-  description: "An example Quarto website with generic branding"
-  image: "assets/images/logo.png"
-  favicon: assets/images/icon.svg
-  open-graph:
-    title: "Example Quarto Website" #Repeated for open graph seperately due to Quarto bug
-    description: "An example Quarto website with generic branding"
-    image: "assets/images/logo.png"
-    image-width: 1200
+  site-url: "https://niboxr.github.io/Example-Quarto-Website/" #needed for open-graph - replace with your site url
+  title: "Example Quarto Website" #update with your site title
+  description: "An example Quarto website with generic branding" #update with your site description
+  image: "assets/images/logo.png" #update with your site's png logo
+  favicon: assets/images/icon.svg #update with your site's svg logo
+  
+  # Open-graph setup for rich visual link previews
+  open-graph: #open-graph creates 
+    title: "Example Quarto Website" #Repeat site title for open graph due to Quarto bug
+    description: "An example Quarto website with generic branding" #repeat site description for open-graph
+    image: "assets/images/logo.png" #repeat site image for open-graph
+    image-width: 1200 #standard dimensions for open-graph image
     image-height: 630
+  
+  # Define website navbar structure
   navbar:
-    title: false 
-    search: false
+    title: false #Turns of title in navbar, preferred when using logo
+    search: false #Turns of search bar, preferred for simple sites 
     left:
       - href: index.md
         text: Home
@@ -24,6 +39,8 @@ website:
     right:
       - href: pages/contact.md
         text: Contact Us
+        
+  # Define website footer
   page-footer:
     # background: primary #I dont like the footer background when there isn't alot of content on the page
     border: false
@@ -36,10 +53,15 @@ website:
         href: https://bsky.app
         aria-label: Bluesky
 
-format:
-  html:
+########################
+# Universal formatting #
+########################
+
+
+format: #formatting can also be controlled at the page level with YAML frontmatter 
+  html: #other document types (pdf, docx, ppt, etc.) also supported
     theme:
-      - default
-      - brand
-    css: assets/css/styles.css
-    toc: false #toc is good for longform content(reports, blog pages, documentation, etc.)
+      - default #default bootstrap theme
+      - brand #edit _brand.yml to make additional changes to appearance
+    css: assets/css/styles.css #CSS styles can be used as a last resort to make changes to the style of your pages
+    toc: false #table of contents oc should be controlled at the page-level; use for longform content(reports, blog pages, documentation, etc.)
