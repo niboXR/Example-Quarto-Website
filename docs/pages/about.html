@@ -77,11 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/css/styles.css">
 <meta property="og:title" content="Example Quarto Website">
-<meta property="og:description" content="Example quarto website with generic branding">
-<meta property="og:image" content="assets/images/logo.png">
+<meta property="og:description" content="An example Quarto website with generic branding">
+<meta property="og:image" content="https://niboxr.github.io/Example-Quarto-Website/pages/assets/images/logo.png">
 <meta property="og:site_name" content="Example Quarto Website">
-<meta property="og:image:height" content="630">
-<meta property="og:image:width" content="1200">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -227,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/niboxr\.github\.io\/Example-Quarto-Website\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
