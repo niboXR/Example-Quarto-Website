@@ -27,7 +27,7 @@ website:
       - href: pages/contact.md
         text: Contact Us
   page-footer:
-    background: primary
+    # background: primary #I dont like the footer background when there isn't alot of content on the page
     border: false
     left: "© 2026 Drip Haus. All rights reserved."
     right:
@@ -44,4 +44,4 @@ format:
       - default
       - brand
     css: assets/css/styles.css
-    toc: false #use a TOC for all pages - good for reports, blog pages, documentation, etc.
+    toc: false #toc is good for longform content(reports, blog pages, documentation, etc.)
