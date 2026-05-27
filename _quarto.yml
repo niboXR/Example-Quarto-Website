@@ -42,16 +42,16 @@ website:
         
   # Define website footer
   page-footer:
-    # background: primary #I dont like the footer background when there isn't alot of content on the page
+    background: primary
     border: false
-    left: "© 2026 Drip Haus. All rights reserved."
-    right:
+    left:
       - icon: instagram
         href: https://instagram.com
         aria-label: Instagram
       - icon: bluesky
         href: https://bsky.app
         aria-label: Bluesky
+    right: "© 2026 Drip Haus. All rights reserved."
 
 ########################
 # Universal formatting #
@@ -65,3 +65,4 @@ format: #formatting can also be controlled at the page level with YAML frontmatt
       - brand #edit _brand.yml to make additional changes to appearance
     css: assets/css/styles.css #CSS styles can be used as a last resort to make changes to the style of your pages
     toc: false #table of contents oc should be controlled at the page-level; use for longform content(reports, blog pages, documentation, etc.)
+    page-layout: full
