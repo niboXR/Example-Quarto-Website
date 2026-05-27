@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs #renders project to docs folder for publishing to Github Pages
+  # render: 
+  #   - content/index.md
+
+website:
+  title: "Example Quarto Website"
+  description: "Example quarto website with generic branding"
+  image: "assets/images/logo.png"
+  favicon: assets/images/icon.svg
+  open-graph:
+    title: "Example Quarto Website" #Repeated for open graph seperately due to Quarto bug
+    description: "Example quarto website with generic branding"
+    image: "assets/images/logo.png"
+    image-width: 1200
+    image-height: 630
+  navbar:
+    title: false 
+    search: false
+    left:
+      - href: index.md
+        text: Home
+      - href: pages/about.md
+        text: About
+    right:
+      - href: pages/contact.md
+        text: Contact Us
+  page-footer:
+    background: primary
+    border: false
+    left: "© 2026 Drip Haus. All rights reserved."
+    right:
+      - icon: instagram
+        href: https://instagram.com
+        aria-label: Instagram
+      - icon: bluesky
+        href: https://bsky.app
+        aria-label: Bluesky
+
+format:
+  html:
+    theme:
+      - default
+      - brand
+    css: assets/css/styles.css
+    toc: false #use a TOC for all pages - good for reports, blog pages, documentation, etc.
